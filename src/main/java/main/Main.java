@@ -1,9 +1,11 @@
 package main;
 
 import org.apache.http.util.Args;
+import org.junit.Test;
 import org.omg.CORBA.ARG_OUT;
 
 import config.Config;
+import metadataWrite.WriteMeta;
 
 public class Main {
 	
@@ -13,9 +15,11 @@ public class Main {
 		
 		
 		
-		//TODO SET Config
 		
 		Config.setApiaudiotag("");
+		Config.setSongsDir("H:\\");
+		
+		WriteMeta.WriteMp3();
 		
 	}
 	

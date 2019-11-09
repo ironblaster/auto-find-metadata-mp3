@@ -29,7 +29,7 @@ public class AudiotagAPI {
 
 	
 	
-	public Metadata apitestPost(File audio) throws IOException  {
+	public static Metadata GetMetaAudio(File audio) throws IOException  {
 		
 		
 	       HttpPost post = new HttpPost("https://audiotag.info/api");
@@ -62,7 +62,7 @@ public class AudiotagAPI {
 	       
 		}
 	
-	public static Metadata responsemp3(String token) throws ParseException, IOException {
+	private static Metadata responsemp3(String token) throws ParseException, IOException {
 		Metadata song = new Metadata();
 		//risposta in base al token
      boolean control=false;
